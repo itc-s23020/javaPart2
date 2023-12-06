@@ -1,16 +1,15 @@
-package chapter8_1;
+package chapter9_1;
 
-public class GeneralMember {
+public abstract class Member {
     private long id;
     private String name;
 
-    public GeneralMember(long id, String name) {
+    protected Member(long id, String name) {
         this.id = id;
         this.name = name;
     }
-    public int membershipFee() {
-        return 1000;
-}
+
+    protected abstract int fee();
 
     public long getId() {
         return id;
@@ -27,5 +26,4 @@ public class GeneralMember {
     public void setName(String name) {
         this.name = name;
     }
-
 }

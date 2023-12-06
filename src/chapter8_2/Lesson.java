@@ -1,17 +1,15 @@
 package chapter8_2;
 
-import java.sql.Struct;
-
 public class Lesson {
-    private
+    private String lessonId;
+    private String lessonName;
 
-    String lessonId;
-    String lessonName;
     public Lesson(String lessonId, String lessonName) {
-        lessonId = lessonId;
-        lessonName= lessonName;
+        this.lessonId = lessonId;
+        this.lessonName = lessonName;
     }
-    public int Fee(){
+
+    public int fee() {
         return 1000;
     }
 

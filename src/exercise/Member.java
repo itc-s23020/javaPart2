@@ -1,16 +1,10 @@
-package chapter8_1;
+package exercise;
 
-public class GeneralMember {
+import javax.xml.namespace.QName;
+
+public class Member {
     private long id;
     private String name;
-
-    public GeneralMember(long id, String name) {
-        this.id = id;
-        this.name = name;
-    }
-    public int membershipFee() {
-        return 1000;
-}
 
     public long getId() {
         return id;
@@ -27,5 +21,14 @@ public class GeneralMember {
     public void setName(String name) {
         this.name = name;
     }
+    public Member(long id, String name) {
+        this.id = id;
+        this.name = name;
 
+
+    }
+    public int fee() {
+        return 0;
+    }
 }
+
